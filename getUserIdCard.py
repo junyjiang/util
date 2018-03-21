@@ -33,6 +33,6 @@ if __name__ =="__main__":
         area = '东海县'
         count = 1
         year =1985
-    if len(year)<4:
+    if len(str(year))<4:
         year =1985
     getusercard(province,city,area,count,year)
