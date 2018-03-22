@@ -1,0 +1,6 @@
+将模块当做script运行
+python -m 搜索sys.path指定的模块并将其内容作为__main__模块执行。由于参数是模块名称，因此您不得提供文件扩展名（.py）。本module-name应该是一个有效的Python模块名称，但执行并不总是执行这项（例如，它可以让你使用包含一个连字符的名称）。包名称也是允许的。当提供包名称而不是普通模块时，解释器将.__main__作为主模块执行。 如果给出该选项，则第一个元素sys.argv将是模块文件的完整路径。与-c选项一样，当前目录将被添加到开始sys.path。
+python -m timeit
+python -m SimpleHTTPServer
+*******实际应用*******
+在jenkins直接掉起junit框架搭建的接口自动化框架时：sys.path.append("/home/autotest/sh-test-automatic")首先要在启动脚本中给定绝对路径后方可调用启动脚本进行测试

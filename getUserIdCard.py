@@ -1,8 +1,8 @@
-import random
 import re
 import requests
-import os,random
+import random
 import time
+#转换成exe使用插件pyinstaller，安装完成后命令行pyinstaller -F YOUR'S.PY
 def getusercard(province,city,area,count,year):
     '''通过爬取身份证生成网站页面来获取身份证数据'''
     for i in range(0, int(count)):
